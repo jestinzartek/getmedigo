@@ -1,0 +1,313 @@
+:root{
+    --gmg-bg-blue:#102A4B;
+    --gmg-bg-blue-dark:#02203B;
+    --gmg-red-color:#E3136E;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('../fonts/LouisGeorgeCafe.eot');
+    src: url('../fonts/LouisGeorgeCafe.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LouisGeorgeCafe.woff2') format('woff2'),
+        url('../fonts/LouisGeorgeCafe.woff') format('woff'),
+        url('../fonts/LouisGeorgeCafe.ttf') format('truetype'),
+        url('../fonts/LouisGeorgeCafe.svg#LouisGeorgeCafe') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis-George-Cafe-Light\'';
+    src: url('../fonts/LouisGeorgeCafeLight.eot');
+    src: url('../fonts/LouisGeorgeCafeLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LouisGeorgeCafeLight.woff2') format('woff2'),
+        url('../fonts/LouisGeorgeCafeLight.woff') format('woff'),
+        url('../fonts/LouisGeorgeCafeLight.ttf') format('truetype'),
+        url('../fonts/LouisGeorgeCafeLight.svg#LouisGeorgeCafeLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis-George-Cafe-bold\'';
+    src: url('../fonts/LouisGeorgeCafe-Bold.eot');
+    src: url('../fonts/LouisGeorgeCafe-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LouisGeorgeCafe-Bold.woff2') format('woff2'),
+        url('../fonts/LouisGeorgeCafe-Bold.woff') format('woff'),
+        url('../fonts/LouisGeorgeCafe-Bold.ttf') format('truetype'),
+        url('../fonts/LouisGeorgeCafe-Bold.svg#LouisGeorgeCafe-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+	color: #102A4B;
+	margin: 0;
+	padding: 0;
+	font-family: 'Louis George Cafe\'';
+}
+
+/*//================================= header css Open =================================//*/
+#navbar-menu{
+	background-color: var(--gmg-bg-blue);
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#navbar-menu .navbar-menu-logo{
+	width: 235px;
+}
+
+
+#navbar-menu .transparent{
+	background-color: transparent;
+	border: transparent;
+}
+#navbar-menu .transparent:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+#navbar-menu .search{
+	color: var(--gmg-red-color);
+}
+
+#navbar-menu a.search{
+	outline: none;
+	text-decoration: none;
+}
+/*//================================= header css closed =================================//*/
+
+
+.category-box{
+	position: relative;
+}
+
+.category-box img{
+	width: 100%;
+}
+
+.category-inner-box{
+	background-color: rgba(213, 7, 97, 0.8);
+	border-radius: 15px;
+	color: var(--bs-white);
+	font-family: 'Louis-George-Cafe-bold\'';
+	font-size: 18px;
+	position: absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+	width: 100%;
+}
+
+
+.order-now {
+  background-color: var(--gmg-red-color);
+  border: none;
+  border-radius: 18px;
+  box-shadow: 5px 5px 10px rgb(255 255 255 / 18%), -1px -2px 14px rgb(6 6 6 / 22%);
+  color: var(--bs-white);
+  font-weight: 700;
+  overflow: hidden;
+  position: relative;
+  border: solid 2px var(--bs-white);
+  width: 70%;  
+}
+
+.order-now:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  background: rgba(227, 19, 110, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(227, 19, 110, 0.13) 0%,
+    rgba(227, 19, 110, 0.13) 77%,
+    rgba(227, 19, 110, 0.5) 92%,
+    rgba(227, 19, 110, 0.3) 100%
+  );
+}
+
+.order-now:hover:after {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  transition-duration: 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+.order-now:active:after {
+  opacity: 0;
+}
+
+.order-now:hover{
+	background-color: #CC1063;
+	border: solid 2px var(--bs-white);  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item-box{
+  background-color: var(--bs-white);		
+}
+
+
+
+
+
+
+
+/*//================================= footer css Open =================================//*/
+footer{
+  background-color: var(--gmg-bg-blue-dark);
+  color: #fff;
+  padding-top: 30px;
+}
+
+footer h5, footer h6{
+	font-family: 'Louis-George-Cafe-bold\'';
+}
+
+footer .contact-icon{
+	background: var(--gmg-red-color);
+    padding: 12px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+footer li{
+	line-height: 35px;
+}
+footer li a{
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+}
+footer li a:hover{
+	color: #fff;
+}
+
+
+footer .copy-right{
+	  background-color: var(--gmg-bg-blue);
+	  text-align: center;
+	  font-weight: 500;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+}
+/*//================================= footer css closed =================================//*/
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1169px){}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+#navbar-menu .navbar-menu-logo {
+    width: 110px;
+    padding-left: 10px;
+}
+	
+	.navbar-dark .navbar-toggler{
+		position: absolute;
+    	right: 0;
+    	top: -50px;
+	}
+
+
+
+}
+
+@media (max-width: 767px){
+
+#navbar-menu .navbar-menu-logo {
+    width: 110px;
+    padding-left: 10px;
+}
+	
+	.navbar-dark .navbar-toggler{
+		position: absolute;
+    	right: 0;
+    	top: -50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============ only desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
+/* ============ desktop view .end// ============ */
