@@ -56,6 +56,17 @@ body{
 	font-family: 'Louis George Cafe\'';
 }
 
+.center{
+    text-align: center;
+}
+
+.view-all-btn a{
+    color: var(--gmg-red-color);
+    font-family: 'Louis-George-Cafe-bold\'';
+    margin-right: 20px;
+}
+
+
 /*//================================= header css Open =================================//*/
 #navbar-menu{
 	background-color: var(--gmg-bg-blue);
@@ -65,15 +76,22 @@ body{
 
 
 #navbar-menu .navbar-menu-logo{
-	width: 235px;
+	width: 200px;
 }
-
-
-#navbar-menu .transparent{
-	background-color: transparent;
+#navbar-menu .select-box{
+	background-color: var(--bs-white);
 	border: transparent;
+    padding: .775rem 2.25rem .889rem .75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
-#navbar-menu .transparent:focus {
+
+#navbar-menu .form-box{
+    padding: .775rem .75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#navbar-menu .select-box:focus {
     border-color: transparent;
     outline: 0;
     box-shadow: none;
@@ -87,6 +105,14 @@ body{
 	outline: none;
 	text-decoration: none;
 }
+
+.upload-btn{
+    background-color: var(--gmg-red-color);
+    border-color: var(--gmg-red-color);;
+}
+
+
+
 /*//================================= header css closed =================================//*/
 
 
@@ -214,12 +240,16 @@ body{
 
 #carousel-item-box .card{
     border: transparent;
+    position: relative;
+    margin: 10px;
+    border: 1px solid #f6f6f6;
 }
 
 
 .carousel-item-box{
   background-color: var(--bs-white);
-  box-shadow: inset 5px 5px 14px #f1f1f1, inset -6px -6px 14px #ffffff;
+  box-shadow: 4px 3px 8px #efeaea, 1px -3px 4px #ffffff;
+  border-radius: 15px;
 
 }
 
@@ -239,13 +269,13 @@ body{
     height: 35px;
     border-radius: 20px;
     position: absolute;
-    right: -5px;
+    right: 10px;
     top: 120px;
     opacity: 0.2;
 }
 
 .owl-carousel .owl-nav button.owl-prev{
-    left: -5px;
+    left: 10px;
     top: 120px;
 }
 
@@ -259,6 +289,69 @@ body{
     background: var(--gmg-red-color);
     opacity: 1;
 }
+.owl-dots{
+    display: none;
+}
+
+.offer-tag{
+    background-color: var(--gmg-red-color);
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    left: 10PX;
+    top: 10px;
+}
+
+.offer-tag:before{
+    content: "";
+    background: var(--gmg-red-color);
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+    border: 2px solid var(--bs-white);
+}
+.offer-tag p{
+    color: var(--bs-white);
+    position: absolute;
+    text-align: center;
+    left: 19px;
+    top: 10px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -383,3 +476,11 @@ footer .copy-right{
 	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
 }	
 /* ============ desktop view .end// ============ */
+
+
+
+
+
+
+
+
