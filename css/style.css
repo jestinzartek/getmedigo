@@ -92,13 +92,15 @@ body{
 
 .category-box{
 	position: relative;
+    margin-bottom: 28px;
 }
 
 .category-box img{
 	width: 100%;
 }
 
-.category-inner-box{
+.category-inner-box,
+.category-inner-box-two{
 	background-color: rgba(213, 7, 97, 0.8);
 	border-radius: 15px;
 	color: var(--bs-white);
@@ -114,8 +116,11 @@ body{
 	width: 100%;
 }
 
+.category-inner-box-two{
+    background-color: rgba(16, 42, 75, 0.8);
+}
 
-.order-now {
+.order-now, .start-now, .book-now  {
   background-color: var(--gmg-red-color);
   border: none;
   border-radius: 18px;
@@ -127,6 +132,15 @@ body{
   border: solid 2px var(--bs-white);
   width: 70%;  
 }
+
+.start-now, .book-now{
+    background-color: var(--gmg-bg-blue);
+}
+
+.book-now{
+  width: 80%;    
+} 
+
 
 .order-now:after {
   content: "";
@@ -147,7 +161,30 @@ body{
   );
 }
 
-.order-now:hover:after {
+.start-now:after,
+.book-now:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  background: rgba(227, 19, 110, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(16, 42, 75, 0.13) 0%,
+    rgba(16, 42, 75, 0.13) 77%,
+    rgba(16, 42, 75, 0.5) 92%,
+    rgba(16, 42, 75, 0.3) 100%
+  );
+}
+
+
+.order-now:hover:after,
+.start-now:hover:after,
+.book-now:hover:after {
   opacity: 1;
   top: 0;
   left: 0;
@@ -157,36 +194,71 @@ body{
   transition-timing-function: ease;
 }
 
-.order-now:active:after {
+.order-now:active:after,
+.start-now:active:after,
+.book-now:active:after {
   opacity: 0;
 }
 
 .order-now:hover{
-	background-color: #CC1063;
-	border: solid 2px var(--bs-white);  
+    background-color: #CC1063;
+    border: solid 2px var(--bs-white);  
+}
+
+.start-now:hover, .book-now:hover{
+    background-color: var(--gmg-bg-blue-dark);
+    border: solid 2px var(--bs-white);  
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#carousel-item-box .card{
+    border: transparent;
+}
 
 
 .carousel-item-box{
-  background-color: var(--bs-white);		
+  background-color: var(--bs-white);
+  box-shadow: inset 5px 5px 14px #f1f1f1, inset -6px -6px 14px #ffffff;
+
 }
 
+.carousel-item-box .card-body{
+    font-family: 'Louis-George-Cafe-bold\'';
+}
+
+.carousel-item-box .fa-rupee-sign{
+    font-size: 14px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    background: var(--gmg-red-color);
+    color: var(--bs-white);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    position: absolute;
+    right: -5px;
+    top: 120px;
+    opacity: 0.2;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    left: -5px;
+    top: 120px;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span{
+    font-size: 40px;
+    line-height: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
+    background: var(--gmg-red-color);
+    opacity: 1;
+}
 
 
 
