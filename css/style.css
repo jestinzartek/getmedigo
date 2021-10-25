@@ -4,9 +4,13 @@
     --gmg-red-color:#E3136E;
 }
 
+h2{
+    font-size: 28px;
+}
 
-
-
+h3{
+    font-size: 24px;
+}
 
 
 @font-face {
@@ -401,37 +405,78 @@ footer .copy-right{
 
 
 
-@media (min-width: 992px) and (max-width: 1169px){}
+@media (min-width: 992px) and (max-width: 1169px){
+
+    h3{
+        font-size: 20px;
+    }
+
+    .category-box img {
+        width: 100%;
+        height: 190px;
+    }
+    .category-inner-box p, .category-inner-box-two p{
+        font-size: 15px;
+    }
+
+}
+
 
 @media (min-width: 768px) and (max-width: 991px){
 
-#navbar-menu .navbar-menu-logo {
-    width: 110px;
-    padding-left: 10px;
-}
-	
+    h3{
+        font-size: 18px;
+    }
+
+    #navbar-menu .navbar-menu-logo {
+        width: 110px;
+        padding-left: 10px;
+    }
 	.navbar-dark .navbar-toggler{
 		position: absolute;
     	right: 0;
     	top: -50px;
 	}
 
+    .category-box img {
+        height: 200px;
+    }
+    .category-inner-box, .category-inner-box-two{
+        padding: 5px;
+    }
+    .category-inner-box p, .category-inner-box-two p{
+        font-size: 15px;
+    }
 
 
 }
 
 @media (max-width: 767px){
 
-#navbar-menu .navbar-menu-logo {
-    width: 110px;
-    padding-left: 10px;
-}
-	
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    #navbar-menu .navbar-menu-logo {
+        width: 110px;
+        padding-left: 10px;
+    }
 	.navbar-dark .navbar-toggler{
 		position: absolute;
     	right: 0;
     	top: -50px;
 	}
+    .category-box img {
+        height: 190px;
+    }
+    .category-inner-box p, .category-inner-box-two p{
+        font-size: 15px;
+    }
+
 }
 
 
