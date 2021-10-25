@@ -470,11 +470,24 @@ footer .copy-right{
     	right: 0;
     	top: -50px;
 	}
+    #category-section .col-12{
+        margin: auto;
+    }
     .category-box img {
         height: 190px;
     }
     .category-inner-box p, .category-inner-box-two p{
         font-size: 15px;
+    }
+
+    .testim .wrap{
+        padding: 10px 20px;
+    }
+    .testim .dots{
+        padding-bottom: 10px;
+    }
+    .testim .cont > div{
+        padding: 0 0px 40px 0;
     }
 
 }
